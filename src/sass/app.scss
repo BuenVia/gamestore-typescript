@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;700&display=swap');
+
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
+}
+
+body {
+  font-family: 'Be Vietnam Pro', sans-serif;
+  min-width: 320px;
+  background-image: url("./assets/hero.jpg");
+  backdrop-filter: brightness(0.3);
+}
+
+#root {
+  height: 100vh;
+}
+
+.App {
+  height: 100vh;
+}
+
+header {
+  height: 20%;
+  .bar {
+    padding: .5em 2em;
+    background-color: #000000;
+    color: whitesmoke;
+    .contact {
+      margin: 0 1rem;
+    }
+    img {
+      height: 20px;
+    }
+  }
+  .logo {
+    margin: 2em 5em;
+    .logo__img {
+      height: 60px;
+    }  
+  }
+}
+
+
+.checkout__area {
+  height: 100vh;
+}
+.checkout {
+  height: 80%;
+  background-color: #4ad87f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .checkout__total {
+    margin-top: 3em;
+  }
+  .checkout__container {
+    width: 800px;
+
+  }
+  .back__btn {
+    padding: .5em;
+    width: 120px;
+    margin: 2em 0;
+    border: none;
+    border-radius: 1em;
+    outline: none;
+    background-color: #000000;
+    color: #eee;
+    cursor: pointer;
+  }
+  .back__btn:hover {
+    transition: 150ms;
+    background-color: rgba(0,0,0,0.8);
+  }
+
+.list__item-container {
+  padding: 1em 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+  .list__details-container {
+    display: flex;
+    flex-direction: row;
+    .game__img {
+      height: 100px;
+    }
+    .coins__img {
+      height: 20px;
+    }
+
+    .list__item-info {
+      margin: 0 1em;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .list__delete {
+    .bin__img {
+      height: 30px;
+      cursor: pointer;
+    }
+    .bin__img:hover {
+      transition: 150ms;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.8);
+    }
+  }
+
+  
+}
+
+.store__container {
+  background: transparent;
+  display: flex;
+  flex-direction: row;
+  .store__basket-container {
+    height: 100vh;
+    width: 40%;
+    padding: 1em;
+    background-color: #4ad87f;
+
+    .bottom__container {
+      position: absolute;
+      bottom: 100px;
+    }
+    .basket__total-container {
+      justify-content: space-between; 
+    }
+    .continue__btn {
+      width: 5rem;
+      margin-top: 1em;
+      padding: 1em;
+      background-color: #000000;
+      color: whitesmoke;
+      border: none;
+      border-radius: 2em;
+      cursor: pointer;
+    }
+    .continue__btn:hover {
+      transition: 150ms;
+      background-color: rgba(0,0,0,0.8);
+    }
+
+    .item__container {
+      padding: 1.5em;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid black;
+    }
+    
+    .item__details-container {
+      display: flex;
+      flex-direction: row;
+
+      .details__container {
+        padding: 0 1em ;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+       
+      .game__img{
+        height: 70px;
+      }
+      .coins__img {
+        height: 20px;
+      }
+    }
+
+    .bin__img {
+      height: 34px;
+      cursor: pointer;
+    }
+    .bin__img:hover {
+      transition: 150ms;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.8);
+    }
+
+  }
+}
+
+
+.store__item-container {
+  padding: 4em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.disabled {
+  opacity: .3;
+}
+  
+.store__item {
+  margin: 1em;
+  padding: 1em;
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+  height: fit-content;
+  background-color: #4ad87f;
+  background-image: url('./assets/controller.png');
+  background-repeat: no-repeat;
+  background-size: 300px;
+  background-position:right;
+  right: 0;
+
+  .details__container p {
+    font-size: 12px;
+  }
+  .game__img {
+    height: 200px;
+  }
+
+  .details__container {
+    margin: 0 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h4, p, button {
+      margin: .5em 0;
+      height: 70%;
+    }
+  }
+
+  .coins__img {
+    height: 20px;
+  }
+
+  .add__btn {
+    padding: .5em;
+    width: 200px;
+    background-color: #000000;
+    color: whitesmoke;
+    border: none;
+    border-radius: 2em;
+    cursor: pointer;
+  } 
+  .add__btn:hover {
+    transition: 150ms;
+    background-color: rgba(0,0,0,0.8);
+  }
+}

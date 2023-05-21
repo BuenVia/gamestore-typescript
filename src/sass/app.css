@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;700&display=swap");
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Be Vietnam Pro", sans-serif;
+  min-width: 320px;
+  background-image: url("./assets/hero.jpg");
+  -webkit-backdrop-filter: brightness(0.3);
+          backdrop-filter: brightness(0.3);
+}
+
+#root {
+  height: 100vh;
+}
+
+.App {
+  height: 100vh;
+}
+
+header {
+  height: 20%;
+}
+header .bar {
+  padding: 0.5em;
+  background-color: #000000;
+  color: whitesmoke;
+}
+header .bar .contact {
+  margin: 0 1rem;
+}
+header .bar img {
+  height: 20px;
+}
+header .logo {
+  margin: 2em 5em;
+}
+header .logo .logo__img {
+  height: 60px;
+}
+
+.checkout {
+  height: 80%;
+  background-color: #4ad87f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.checkout .checkout__container {
+  width: 800px;
+}
+.checkout .back__btn {
+  padding: 0.5em;
+  width: 120px;
+  margin: 2em 0;
+  border: none;
+  border-radius: 1em;
+  outline: none;
+  background-color: #000000;
+  color: #eee;
+  cursor: pointer;
+}
+.checkout .back__btn:hover {
+  transition: 150ms;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.checkout .list__item-container {
+  padding: 1em 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+.checkout .list__details-container {
+  display: flex;
+  flex-direction: row;
+}
+.checkout .list__details-container .game__img {
+  height: 100px;
+}
+.checkout .list__details-container .coins__img {
+  height: 20px;
+}
+.store__container {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+}
+.store__container .store__item-container {
+  width: 80%;
+}
+.store__container .store__basket-container {
+  height: 100vh;
+  width: 20%;
+  padding: 1em;
+  background-color: #4ad87f;
+}
+.store__container .store__basket-container .basket__total-container {
+  position: absolute;
+  bottom: 150px;
+}
+.store__container .store__basket-container .continue__btn {
+  width: 300px;
+  padding: 1em;
+  background-color: #000000;
+  color: whitesmoke;
+  border: none;
+  border-radius: 2em;
+  position: absolute;
+  bottom: 100px;
+  cursor: pointer;
+}
+.store__container .store__basket-container .continue__btn:hover {
+  transition: 150ms;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.item__container {
+  padding: 1.5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+.item__details-container {
+  display: flex;
+  flex-direction: row;
+}
+.item__details-container .game__img {
+  height: 70px;
+}
+.item__details-container .coins__img {
+  height: 30px;
+}
+
+.bin__img {
+  height: 34px;
+}
+
+.store__item-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.store__item {
+  margin: 1em;
+  padding: 1em;
+  display: flex;
+  flex-direction: row;
+  width: 600px;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: #4ad87f;
+}
+.store__item .game__img {
+  height: 200px;
+}
+.store__item .details__container {
+  margin: 0 1em;
+}
+.store__item .details__container h4, .store__item .details__container p, .store__item .details__container button {
+  margin: 0.5em 0;
+}
+.store__item .add__btn {
+  padding: 1em;
+  width: 200px;
+  background-color: #000000;
+  color: whitesmoke;
+  border: none;
+  border-radius: 2em;
+  cursor: pointer;
+}
+.store__item .add__btn:hover {
+  transition: 150ms;
+  background-color: rgba(0, 0, 0, 0.8);
+}/*# sourceMappingURL=app.css.map */
