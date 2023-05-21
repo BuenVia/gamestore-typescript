@@ -9,7 +9,14 @@
 body {
   font-family: 'Be Vietnam Pro', sans-serif;
   min-width: 320px;
-  background-image: url("assets/hero.jpg");
+  background-image: url("./assets/hero.jpg");
+  min-height: 100vh;
+  position: relative;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   backdrop-filter: brightness(0.3);
 }
 
